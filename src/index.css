@@ -1,0 +1,50 @@
+/* Overrides */
+.roulette-pro-graceful-lines-design-wrapper-overrides {
+  padding: 33px 0 82px;
+}
+
+/* Prize item */
+.roulette-pro-graceful-lines-prize-item {
+  position: relative;
+  text-align: center;
+}
+
+/* Determinator */
+.roulette-pro-graceful-lines-prize-item-determinator {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 5px;
+  height: 100%;
+  background: url("./images/graceful-lines-design-roulette-divider.png") center center no-repeat;
+  background-size: 100% auto;
+}
+
+.roulette-pro-graceful-lines-prize-item-determinator.horizontal {
+  top: 0;
+  margin-left: -2px;
+  left: 0;
+}
+
+.roulette-pro-graceful-lines-prize-item-determinator.vertical {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.roulette-pro-graceful-lines-prize-item-content {
+  height: 100%;
+}
+
+.roulette-pro-graceful-lines-prize-item-content-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.roulette-pro-graceful-lines-prize-item-content-text {
+  margin: 0;
+  word-break: break-word;
+  font-weight: 700;
+  font-size: 21px;
+  max-height: 30px;
+  overflow: hidden;
+}

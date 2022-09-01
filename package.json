@@ -1,0 +1,60 @@
+{
+  "name": "rrp-graceful-lines-plugin",
+  "version": "1.0.0",
+  "description": "Graceful lines design plugin for React Roulette Pro",
+  "main": "dist/index.js",
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "webpack --watch",
+    "build": "NODE_ENV=production webpack",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IvanAdmaers/rrp-graceful-lines-plugin"
+  },
+  "keywords": [
+    "react-roulette",
+    "react-roulette-pro",
+    "rrp",
+    "design",
+    "design plugin",
+    "graceful lines",
+    "graceful lines design plugin",
+    "roulette design plugin"
+  ],
+  "author": "Ivan Admaers (https://ivanadmaers.com)",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0",
+    "react-roulette-pro": ">=3.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.35.1",
+    "@typescript-eslint/parser": "^5.35.1",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "prettier": "^2.7.1",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.8.2",
+    "webpack-cli": "^4.10.0"
+  }
+}

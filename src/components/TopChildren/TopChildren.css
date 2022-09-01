@@ -1,0 +1,20 @@
+/* Top children */
+.roulette-pro-graceful-lines-design-top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  left: calc(50% - 6px);
+  transform: translateX(-50%);
+  width: 354px;
+  height: 30px;
+  background-image: url("../../images/graceful-lines-design-top.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.roulette-pro-graceful-lines-design-top.down {
+  top: auto;
+  bottom: 0;
+  transform: translateX(-50%) scale(1, -1);
+}

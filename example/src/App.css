@@ -1,0 +1,122 @@
+body {
+  background-color: #111;
+  background-image: url("./images/background.jpeg");
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.roulette-wrapper {
+  background: rgba(0, 0, 0, 0.6);
+  min-height: 265px;
+}
+
+.roulette-wrapper.vertical {
+  height: 80vh;
+}
+
+.gray-block {
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(to bottom, #202020 65%, rgba(7,7,7,0) 92%, rgba(0,0,0,0) 99%);
+  max-width: 398px;
+  border-radius: 38px;
+  padding: 18px 13px 5px;
+  margin: 0 auto;
+  min-height: 70px;
+  box-sizing: border-box;
+  margin-top: -47px;
+}
+
+.button-wrapper {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  margin-top: 25px;
+}
+
+.button-wrapper::after {
+  content: "";
+  width: 377px;
+  height: 160px;
+  background: url("./images/button-background.png") center center no-repeat;
+  background-size: 100% auto;
+  top: 50%;
+  left: 54%;
+  margin: -80px 0 0 -188px;
+  position: absolute;
+  z-index: -1;
+}
+
+.spin-button {
+  position: relative;
+    z-index: 2;
+    width: 350px;
+    font-size: 21px;
+    border-radius: 41px;
+    padding: 24px 35px;
+    box-shadow: 0px 2px 0 2px rgb(155 106 0 / 70%);
+    color: #000;
+    transition: all 0.3s ease-out;
+    background: linear-gradient(to bottom, #ffc12f 0%, #ffe324 50%, #ffc12f 100%);
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.spin-button::after, .spin-button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+  border-radius: inherit;
+}
+
+.spin-button::after {
+  background: linear-gradient(to bottom, #ffef85 0%, #f8d40a 50%, #ffef85 100%);
+  z-index: -2;
+}
+
+.options {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 80px auto;
+  max-width: 1280px;
+  position: relative;
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #ffe124;
+}
+
+.options-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 600px) {
+  .options-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.options-list-item p {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.options-reset-button {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .options-reset-button {
+    margin: 0 auto;
+  }
+}
